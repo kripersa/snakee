@@ -1,6 +1,7 @@
 import { cellArray } from "./createboard.js";
 
-export function moving() {
+export function moving() 
+{
   let snake = document.querySelector(".snake");
 
   document.addEventListener("keyup", snakeMove);
