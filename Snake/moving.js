@@ -127,6 +127,15 @@ export function moving() {
         }
       }
     }
+    if (key === "a" && snakeSartinPosition.length === 2 && snakeSartinPosition[1] == 1 ){
+      console.log("kai erti");
+      let snakeCurentPosition = snakeSartinPosition[0] + snakeSartinPosition[1];
+      for (let i = 0; i < cellArray.length; i++) {
+        if (cellArray[i].id === snakeCurentPosition) {
+          snake.parentElement.innerHTML = "";
+          cellArray[i].appendChild(snake);
+
+    }}}
     if (key === "a" && snakeSartinPosition.length === 3) {
       let snakeCurentPosition =
         Number(snakeSartinPosition[0]).toString() +
